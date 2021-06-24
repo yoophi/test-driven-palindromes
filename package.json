@@ -5,7 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint . && prettier-eslint --list-different **/*.js",
+    "format": "prettier-eslint **/*.js --ignore ./node_modules/** --write"
   },
   "repository": {
     "type": "git",
@@ -17,9 +19,7 @@
   "devDependencies": {
     "eslint": "^7.29.0",
     "eslint-plugin-jest": "^24.3.6",
-    "jest": "^27.0.5"
-  },
-  "dependencies": {
+    "jest": "^27.0.5",
     "prettier-eslint-cli": "^5.0.1"
   }
 }

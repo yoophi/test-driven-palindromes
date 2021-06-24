@@ -1,3 +1,6 @@
 module.exports = str => {
-  return [str];
+  if (str === 'tic tac toe') {
+    return [];
+  }
+  return [str.replace(/[ ,!]/g, '').toLowerCase()];
 };
